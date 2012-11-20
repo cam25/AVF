@@ -15,7 +15,7 @@ fieldset {
 
 body {
     background-color: #000;
-    background-image: -moz-linear-gradient(#fff 0%, #aaa 15%, #fff 20%, #aaa 35%, #fff 40%, #aaa 55%, #fff 60%, #aaa 75%, #fff 80%, #aaa 95%, #fff 100%);
+    background-image: -moz-linear-gradient(#fff 20%, #aaa 35%, #fff 40%, #aaa 55%, #fff 60%, #aaa 75%, #fff 80%, #aaa 95%, #fff 100%, #ffffff 0%, #aaaaaa 15%);
     background-image: -o-linear-gradient(#fff 0%, #aaa 15%, #fff 20%, #aaa 35%, #fff 40%, #aaa 55%, #fff 60%, #aaa 75%, #fff 80%, #aaa 95%, #fff 100%);
     background-image: -webkit-linear-gradient(#fff 0%, #aaa 15%, #fff 20%, #aaa 35%, #fff 40%, #aaa 55%, #fff 60%, #aaa 75%, #fff 80%, #aaa 95%, #fff 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(15%, #aaa), color-stop(20%, #fff), color-stop(35%, #aaa),
@@ -46,8 +46,8 @@ a {
     border-style: solid;
     border-width: medium;
     border-radius: 0.625em;
-    border-color: #303bb1;
-    background-color: #556789;
+    border-color: #7789ab;
+    background-color: #1861e7;
     background-image: -moz-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
     background-image: -o-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
     background-image: -webkit-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
