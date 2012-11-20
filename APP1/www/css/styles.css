@@ -47,11 +47,11 @@ a {
     border-radius: 0.625em;
     border-color: #b0b6b6;
     background-color: #18d635;
-    background-image: -moz-linear-gradient(#568a63 0%, #33675b 100%, #556789 100%, #334567 100%);
-    background-image: -o-linear-gradient(#568a63 90%, #33675b 100%, #556789 0%, #334567 15%);
-    background-image: -webkit-linear-gradient(#568a63 0%, #33675b 15%, #556789 90%, #334567 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #556789),
-                      color-stop(15%, #568a63), color-stop(90%, #33675b), color-stop(100%, #556789));
+    background-image: -moz-linear-gradient(#337da7 0%, #333e67 100%, #556789 100%, #33675b 100%);
+    background-image: -o-linear-gradient(#337da7 90%, #333e67 100%, #556789 0%, #33675b 15%);
+    background-image: -webkit-linear-gradient(#337da7 0%, #333e67 15%, #556789 90%, #33675b 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33675b),
+                      color-stop(15%, #337da7), color-stop(90%, #333e67), color-stop(100%, #33675b));
     margin: 1.5% 0.4% 0.75%;
     display: block;
     padding: 0.25% 0.75%;
