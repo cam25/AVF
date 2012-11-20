@@ -59,25 +59,7 @@ a {
     min-height: 4em;
 }
 
-._2col-section {
-    border-style: solid;
-    border-width: medium;
-    border-radius: 0.625em;
-    border-color: #7789ab;
-    background-color: #2a6c32;
-    background-image: -moz-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
-    background-image: -o-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
-    background-image: -webkit-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #556789),
-                      color-stop(15%, #334567), color-stop(90%, #334567), color-stop(100%, #556789));
-    margin: 1% 0.4%;
-    min-width: 48%;
-    max-width: 48%;
-    padding: 0.25% 0.3%;
-    min-height: 20.3125em;
-    overflow: auto;
-    float: left;
-}
+
 
 /* ---- SKELETON CUSTOMIZATION ENDS HERE ----- */
 
