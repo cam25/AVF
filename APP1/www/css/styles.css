@@ -48,10 +48,10 @@ a {
     border-color: #b0b6b6;
     background-color: #18d635;
     background-image: -moz-linear-gradient(#346aa6 0%, #335567 100%, #556789 100%, #333e67 100%);
-    background-image: -o-linear-gradient(#556789 0%, #337da7 99.67%, #333e67 100%, #c6c6c6 100%);
+    background-image: -o-linear-gradient(#556789 0%, #337da7 99.67%, #c6c6c6 100%, #333e67 100%);
     background-image: -webkit-linear-gradient(#337da7 0%, #333e67 15%, #556789 98.01%, #b9b9b9 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33675b),
-                      color-stop(15%, #337da7), color-stop(90%, #333e67), color-stop(100%, #33675b));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b9b9b9),
+                      color-stop(15%, #337da7), color-stop(90%, #333e67), color-stop(100%, #b9b9b9));
     margin: 1.5% 0.4% 0.75%;
     display: block;
     padding: 0.25% 0.75%;
