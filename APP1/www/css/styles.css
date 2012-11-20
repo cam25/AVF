@@ -59,7 +59,20 @@ a {
     min-height: 4em;
 }
 
-
+._2col-section {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 0.625em;
+    border-color: #7789ab;
+    background-color: #2a6c32;
+        margin: 1% 0.4%;
+    min-width: 48%;
+    max-width: 48%;
+    padding: 0.25% 0.3%;
+    min-height: 20.3125em;
+    overflow: auto;
+    float: left;
+}
 
 /* ---- SKELETON CUSTOMIZATION ENDS HERE ----- */
 
