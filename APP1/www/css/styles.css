@@ -46,12 +46,8 @@ a {
     border-width: medium;
     border-radius: 0.625em;
     border-color: #1574d9;
-    background-color: #18d635;
-    background-image: -moz-linear-gradient(#334567 90%, #556789 100%, #568a63 0%, #33675b 15%);
-    background-image: -o-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
-    background-image: -webkit-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #556789),
-                      color-stop(15%, #334567), color-stop(90%, #334567), color-stop(100%, #556789));
+    background-color: #2a6c32;
+
     margin: 1.5% 0.4% 0.75%;
     display: block;
     padding: 0.25% 0.75%;
