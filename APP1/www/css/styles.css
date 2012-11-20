@@ -65,11 +65,20 @@ a {
     border-radius: 0.625em;
     border-color: #7789ab;
      background-color: #18d635;
-    background-image: -moz-linear-gradient(#568a63 0%, #33675b 100%, #556789 100%, #334567 100%);
-    background-image: -o-linear-gradient(#568a63 90%, #33675b 100%, #556789 0%, #334567 15%);
-    background-image: -webkit-linear-gradient(#568a63 0%, #33675b 15%, #556789 90%, #334567 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #556789),
-                      color-stop(15%, #568a63), color-stop(90%, #33675b), color-stop(100%, #556789));
+   background-image: linear-gradient(bottom, rgb(83,96,201) 25%, rgb(117,125,242) 63%);
+background-image: -o-linear-gradient(bottom, rgb(83,96,201) 25%, rgb(117,125,242) 63%);
+background-image: -moz-linear-gradient(bottom, rgb(83,96,201) 25%, rgb(117,125,242) 63%);
+background-image: -webkit-linear-gradient(bottom, rgb(83,96,201) 25%, rgb(117,125,242) 63%);
+background-image: -ms-linear-gradient(bottom, rgb(83,96,201) 25%, rgb(117,125,242) 63%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(83,96,201)),
+	color-stop(0.63, rgb(117,125,242))
+);
+
     margin: 1% 0.4%;
     min-width: 48%;
     max-width: 48%;
