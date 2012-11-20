@@ -198,29 +198,7 @@ div#geo-loc img, img#cam-shot {
 }
 /* End of map styling */
 
-/* Cloud styling starts here */
-#foreground {
-    position: fixed;
-    display: block;
-    left: 0px;
-    top: 0px;
-    padding: 0px;
-    margin: 0px;
-}
 
-.fg-image {
-    background-image: url("../images/clouds.png");
-    width: 8.125em;
-    height: 5em;
-    padding: 0px;
-    margin: 0px;
-    z-index: 10;
-    position: fixed;
-}
-
-
-
-/* End of cloud styling */
 
 /* Compass styling */
 #compass-img {
