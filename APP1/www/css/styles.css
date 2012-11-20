@@ -136,7 +136,7 @@ li > a, .home-link > a {
     border-radius: 9%;
     border-color: #fff;
     border-width: 4%;
-    background-color: #9a1010;
+    background-color: #ed4c07;
     background-image: -moz-linear-gradient(#f4f5f9 0%, #9a1010 10%, #681010 50%, #9a1010 90%, #f4f5f9 100%);
     background-image: -o-linear-gradient(#f4f5f9 0%, #9a1010 10%, #681010 50%, #9a1010 90%, #f4f5f9 100%);
     background-image: -webkit-linear-gradient(#f4f5f9 0%, #9a1010 10%, #681010 50%, #9a1010 90%, #f4f5f9 100%);
@@ -218,30 +218,7 @@ div#geo-loc img, img#cam-shot {
     position: fixed;
 }
 
-#c1 {
-    left: 0%;
-    top: 0%;
-}
 
-#c2 {
-    right: 0%;
-    top: 0%;
-}
-
-#c3 {
-    left: 0%;
-    bottom: 0%;
-}
-
-#c4 {
-    right: 0%;
-    bottom: 0%;
-}
-
-#c5 {
-    top: 0%;
-    left: 50%;
-}
 
 /* End of cloud styling */
 
