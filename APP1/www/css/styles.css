@@ -65,7 +65,7 @@ a {
     border-width: medium;
     border-radius: 0.625em;
     border-color: #7789ab;
-    background-color: #334567;
+    background-color: #2a6c32;
     background-image: -moz-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
     background-image: -o-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
     background-image: -webkit-linear-gradient(#556789 0%, #334567 15%, #334567 90%, #556789 100%);
@@ -102,7 +102,7 @@ h1 {
 h2 {
     text-align: left;
     text-decoration: underline;
-    color: #c7cece;
+    color: #cacfcf;
 }
 
 h3 {
