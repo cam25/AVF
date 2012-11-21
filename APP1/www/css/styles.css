@@ -1,5 +1,5 @@
 html{
-  background: #0e3862;
+  background: #164f87;
 }
 
 header{
@@ -7,7 +7,7 @@ header{
 }
 
 #top{
-    background: #686b62;
+    background: #61656a;
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
     border-top-left-radius: 30px 30px;
@@ -16,7 +16,7 @@ header{
 }
 
 #devinfo{
-  color: #131415;
+  color: #d9dbdc;
 }
 
 #discuss{
