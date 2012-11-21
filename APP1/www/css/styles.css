@@ -14,9 +14,16 @@ fieldset {
 }
 
 body {
-   body{font-family: Arial, Helvetica, san-serif;width: 300px; margin: auto;padding: 10px; background:#0c9af2;}
-site-wrapper{background: gray no-repeat; height: 400px;padding-top: 200px}
-content{width: 480px;height: 620px;overflow: scroll;}}
+    background-color: #000;
+    background-image: -moz-linear-gradient(#fff 40%, #aaa 55%, #fff 60%, #aaa 75%, #fff 80%, #aaa 95%, #fff 100%, #ffffff 0%, #161616 15%, #868181 20%, #776e6e 35%);
+    background-image: -o-linear-gradient(#fff 0%, #aaa 15%, #fff 20%, #aaa 35%, #fff 40%, #aaa 55%, #fff 60%, #aaa 75%, #fff 80%, #aaa 95%, #fff 100%);
+    background-image: -webkit-linear-gradient(#fff 0%, #aaa 15%, #fff 20%, #aaa 35%, #fff 40%, #aaa 55%, #fff 60%, #aaa 75%, #fff 80%, #aaa 95%, #fff 100%);
+
+    background-repeat: repeat-y;
+    margin: 1% 5%;
+    min-width: 93.75%;
+    min-height: 100%;
+}
 
 section#content {
     margin: auto 0px;
