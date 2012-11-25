@@ -1,1 +1,1 @@
-alert("DEMO APP LOAD SUCSESSFUL, click 'OK' to continue.");
+alert("Suited and Booted!, click 'OK' to continue.");
