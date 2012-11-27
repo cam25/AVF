@@ -38,14 +38,32 @@ text-align: center;
 
 #discuss{
   color: #d9dbdc;
+   padding: 10px;
+    
+    width: 900px;
+
+margin:0 auto;
+text-align: center;
 }
 
 #native{
   color: #d9dbdc;
+   padding: 10px;
+    
+    width: 900px;
+
+margin:0 auto;
+text-align: center;
 }
 
 #api{
   color: #d9dbdc;
+   padding: 10px;
+    
+    width: 900px;
+
+margin:0 auto;
+text-align: center;
 }
 
 
