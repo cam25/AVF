@@ -4,6 +4,10 @@ html{
 
 header{
   color: #ff7a05;
+  padding: 10px;
+width: 900px;
+border:1px solid #ccc;
+margin:0 auto;
 }
 
 #pageBegin{
