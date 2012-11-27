@@ -6,7 +6,7 @@ header{
   color: #ff7a05;
 }
 
-#top{
+#pageBegin{
     background: #61656a;
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
@@ -32,7 +32,7 @@ header{
 }
 
 
-#bottom{
+#pageEnd{
     background: #61656a;
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
