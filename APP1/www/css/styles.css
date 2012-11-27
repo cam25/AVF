@@ -24,16 +24,15 @@ border:1px solid #ccc;
 margin:0 auto;	
 }
 
+
+
 #devinfo{
-padding: 10px;
+  color: #d9dbdc;
+  padding: 10px;
     
     width: 900px;
 
 margin:0 auto;
-}
-
-#devinfo{
-  color: #d9dbdc;
 }
 
 #discuss{
