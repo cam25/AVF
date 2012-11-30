@@ -19,7 +19,7 @@ position: absolute;
 bottom: 0; 
 left: 0; 
 width: 100%; 
-height: 90px; /*Height of frame div*/
+height: 130px; /*Height of frame div*/
 overflow: scroll; /*Disable scrollbars. Set to "scroll" to enable*/
 background: #222277;
 color: white;
@@ -34,7 +34,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-bottom: 90pxs; /*Set bottom value to HeightOfFrameDiv*/
+bottom: 130px; /*Set bottom value to HeightOfFrameDiv*/
 overflow: auto; 
 background: #326536;
 padding-bottom: 100px;
@@ -42,7 +42,7 @@ padding-bottom: 100px;
 
 .innertube{
 text-align: center;
-margin: 15px; /*Margins for inner DIV inside each DIV*/
+margin: 15px; /*Margins for inner DIV inside each DIV */
 }
 
 h1{
