@@ -17,15 +17,13 @@
 //  
 //  });
 //});
-
 var query = escape('select item from weather.forecast where location="20785"'),
-    url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?"; 
+    url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
 
-$.getJSON(url, function(data) {
-//$("#apiData").append("Sunrise: " + data.query.channel.astronomy.sunrise + "<br />");
-     $("#weatherApi").append(data.query.results.channel.item.title + "<br />" + data.query.results.channel.item.description + "<br />");
-  console.log(data.query.results.channel.item);
+$.getJSON(url, function (data) {
+    $("#weatherApi").append(data.query.results.channel.item.title + "<br />" + data.query.results.channel.item.description + "<br />");
+    console.log(data.query.results.channel.item);
 });
-  
+
 
 //c62dd6erynej3zvm8up68nt4
