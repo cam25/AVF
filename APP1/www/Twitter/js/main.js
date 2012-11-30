@@ -11,8 +11,8 @@ $.ajax({
                 $("#apiData")
                     .append("<li class='test'>" +
                             "<p>" +
-                            "<img src='" + json.results[i].profile_image_url + "' />" +
-                            " <a>" + json.results[i].from_user + "</a>" +
+                            "<img class='twitpic' src='"  + json.results[i].profile_image_url + "' />" +
+                            " <a >" + json.results[i].from_user + "</a>" +
                             "<p>" + json.results[i].text + "</p>" +
                             "<p>" + json.results[i].created_at + "</em>" +
                             "</p>" +
