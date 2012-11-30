@@ -23,8 +23,8 @@ var query = escape('select item from weather.forecast where location="20785"'),
 
 $.getJSON(url, function(data) {
 //$("#apiData").append("Sunrise: " + data.query.channel.astronomy.sunrise + "<br />");
-     $("#weatherApi").append("Forecast: " + data.query.results.channel.item.description + "<br />");
-  console.log(data.query.results.channel.item.description);
+     $("#weatherApi").append(data.query.results.channel.item.title + data.query.results.channel.item.description + "<br />");
+  console.log(data.query.results.channel.item);
 });
   
 
