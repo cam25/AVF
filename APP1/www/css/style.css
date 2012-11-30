@@ -40,6 +40,14 @@ background: #326536;
 padding-bottom: 100px;
 }
 
+.twitter{
+	padding-top: 16px;
+	padding-left: 10px;
+	padding-right: 8px;
+	
+	
+}
+
 .innertube{
 text-align: center;
 margin: 15px; /*Margins for inner DIV inside each DIV */
