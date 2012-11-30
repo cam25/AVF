@@ -47,6 +47,9 @@
 	<key>BackupWebStorage</key>
 	<string>cloud</string>
 	<key>ExternalHosts</key>
+	<array>
+               <string>*.youtube.com</string>
+       </array>
 	<array/>
 	<key>Plugins</key>
 	<dict>
