@@ -1,7 +1,24 @@
-
-
+String.prototype.parseHashtag = function() {
+    return this.replace(/[#]+[A-Za-z0-9-_]+/g, function(t) {
+        var tag = t.replace("#","%23")
+        return t.link("http://search.twitter.com/search?q="+tag);
+    });
+};
+String.prototype.parseURL = function() {
+    return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&~\?\/.=]+/g, function(url) {
+        return url.link(url);
+    });
+    
+    };
+    String.prototype.parseUsername = function() {
+    return this.replace(/[@]+[A-Za-z0-9-_]+/g, function(u) {
+        var username = u.replace("@","")
+        return u.link("http://twitter.com/"+username);
+    });
+};
+    
 $.ajax({
-			url: "http://search.twitter.com/search.json?q=blue%20angels&rpp=5&include_entities=true&result_type=mixed?callback=?",
+			url: "http://search.twitter.com/search.json?q=google&rpp=5&include_entities=true&result_type=mixed?callback=?",
 			type: "GET",
 			dataType: "json",
 			success: function(json){
@@ -13,8 +30,9 @@ $.ajax({
                             "<p>" +
                             "<img class='twitpic' src='"  + json.results[i].profile_image_url + "' />" +
                             " <a >" + json.results[i].from_user + "</a>" +
-                            "<p>" + json.results[i].text + "</p>" +
-                            "<p>" + json.results[i].created_at + "</em>" +
+                            "<p>" + json.results[i].text.parseURL().parseHashtag().parseUsername() + "</p>" +
+                            "<p>" + json.results[i].created_at+ "</p>" +
+                             
                             "</p>" +
                             "</li>");
                 }

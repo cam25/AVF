@@ -8,7 +8,6 @@ header{
 
 
 
-
 .test{
 -webkit-border-radius: 0.5em;
 		-moz-border-radius: 0.5em;
@@ -23,6 +22,41 @@ header{
 width: 900px;
 border:1px solid #ccc;
 margin: auto;
+width: 415px;
+		           padding: 0;
+		           overflow: hidden;
+		           font-family:Georgia,"Times New Roman",serif;
+		           font-size: 14px;
+		           font-style: italic;
+		           color: #31353d;
+		           line-height: 16px;
+		           font-weight:bold;
+		           background: #f4f4f4;
+    margin-bottom: 10px;
+
+}
+.test a{
+	color: #0084B4;
+	
+}
+
+.test:hover{
+	
+	border-color: #8996a0 #798791 #6c7a85;
+    text-shadow: 0 1px 0 #ced9e0;
+    -webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;
+    -moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;
+    box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;
+}
+.twitpic{
+	
+	display: inline-table;
+	height: 75px;
+	border: 1px solid #dedede;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .title{
