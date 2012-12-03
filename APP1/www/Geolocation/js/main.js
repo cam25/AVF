@@ -27,7 +27,6 @@
                             'Speed: '              + position.coords.speed                 + '<br />' +
                             'Timestamp: '          + new Date(position.timestamp)          + '<br />';
     }
-    console.log(position);
     // onError Callback receives a PositionError object
     //
     function onError(error) {
