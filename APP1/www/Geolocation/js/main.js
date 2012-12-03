@@ -28,4 +28,4 @@
           'message: ' + error.message + '\n');
     }
     
-onSuccess();
+onDeviceReady();
