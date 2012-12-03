@@ -1,31 +1,30 @@
-//geo
+// Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
 
-// Set an event to wait for Cordova to load
-//
-document.addEventListener("deviceready", onDeviceReady, false);
-
-// Cordova is loaded and Ready
-//
-function onDeviceReady() {
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
-}
-
-// Display `Position` properties from the geolocation
-//
-function onSuccess(position) {
-    var div = document.getElementById('gps');
+    var watchID = null;
     
-    div.innerHTML = 'Latitude: '             + position.coords.latitude  + '<br/>' +
-    'Longitude: '                            + position.coords.longitude + '<br/>' +
-    'Altitude: '                             + position.coords.altitude  + '<br/>' +
-    'Accuracy: '                             + position.coords.accuracy  + '<br/>' +
-    'Altitude Accuracy: '                    + position.coords.altitudeAccuracy  + '<br/>' +
-    'Heading: '                              + position.coords.heading   + '<br/>' +
-    'Speed: '                                + position.coords.speed     + '<br/>';
-}
 
-// Show an alert if there is a problem getting the geolocation
-//
-function onError() {
-    alert('onError!');
-}
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        // Throw an error if no update is received every 30 seconds
+        var options = { timeout: 10000 };
+        watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
+    }
+    
+
+    // onSuccess Geolocation
+    //
+    var onSuccess = function(position) {
+        alert('Latitude: '  + position.coords.latitude             + '\n' +
+              'Longitude: ' + position.coords.longitude            + '\n' +
+              'Timestamp: ' + new Date(position.timestamp * 1000)  + '\n');
+    };
+    // onError Callback receives a PositionError object
+    //
+    function onError(error) {
+        alert('code: ' + error.code + '\n' +
+          'message: ' + error.message + '\n');
+    }
+    
