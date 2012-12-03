@@ -19,8 +19,9 @@
 //});
 var query = escape('select item from weather.forecast where location="20785"'),
     url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
+ var location = Latitude: 38.911974 Longitude: -76.8789536
 
-$.getJSON(url, function (data) {
+$.getJSON(location, function (data) {
     $("#weatherApi").append(data.query.results.channel.item.title + "<br />" + data.query.results.channel.item.description + "<br />");
     console.log(data.query.results.channel.item);
 });
