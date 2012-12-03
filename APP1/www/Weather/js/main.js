@@ -21,7 +21,7 @@ var query = escape('select item from weather.forecast where location="20785"'),
     url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
 
 
-$.getJSON(locationLat,locationLon, function (data) {
+$.getJSON(url, function (data) {
     $("#weatherApi").append(data.query.results.channel.item.title + "<br />" + data.query.results.channel.item.description + "<br />");
     console.log(data.query.results.channel.item);
 });
