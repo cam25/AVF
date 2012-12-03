@@ -19,8 +19,7 @@
 //});
 var query = escape('select item from weather.forecast where location="20785"'),
     url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
- var locationLat = "38.911974";
- var locationLon = "-76.8789536";
+
 
 $.getJSON(locationLat,locationLon, function (data) {
     $("#weatherApi").append(data.query.results.channel.item.title + "<br />" + data.query.results.channel.item.description + "<br />");
