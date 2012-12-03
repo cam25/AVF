@@ -16,11 +16,17 @@
 
     // onSuccess Geolocation
     //
-    var onSuccess = function(position) {
-        alert('Latitude: '  + position.coords.latitude             + '\n' +
-              'Longitude: ' + position.coords.longitude            + '\n' +
-              'Timestamp: ' + new Date(position.timestamp * 1000)  + '\n');
-    };
+   function onSuccess(position) {
+        var element = document.getElementById('coordinates');
+        element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+                            'Longitude: '          + position.coords.longitude             + '<br />' +
+                            'Altitude: '           + position.coords.altitude              + '<br />' +
+                            'Accuracy: '           + position.coords.accuracy              + '<br />' +
+                            'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+                            'Heading: '            + position.coords.heading               + '<br />' +
+                            'Speed: '              + position.coords.speed                 + '<br />' +
+                            'Timestamp: '          + new Date(position.timestamp)          + '<br />';
+    }
     // onError Callback receives a PositionError object
     //
     function onError(error) {
