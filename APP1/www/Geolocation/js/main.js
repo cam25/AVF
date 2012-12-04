@@ -1,6 +1,6 @@
 // Wait for Cordova to load
     //
-    document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("deviceready", geoCall, false);
 
     var watchID = null;
     
