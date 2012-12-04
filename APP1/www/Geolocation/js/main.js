@@ -18,7 +18,6 @@
     //
  var gpsYes = function(location) {
     var display = $("#geo"); // grabbing the div id geo
-    var html = []; //array im pushing the data inside
     var latitude = location.coords.latitude;
     var longitude = location.coords.longitude;
     var accuracy = location.coords.accuracy;
@@ -32,4 +31,4 @@
    var gpsNo = function(error) {
     alert('Gps Fail ' + error.message);
 } 
-onDeviceReady()
+
