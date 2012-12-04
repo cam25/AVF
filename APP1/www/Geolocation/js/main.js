@@ -1,13 +1,13 @@
 // Wait for Cordova to load
     //
-    document.addEventListener("deviceready", geoCall, false);
+    document.addEventListener("deviceready", onDeviceReady, false);
 
     var watchID = null;
     
 
     // Cordova is ready
     //
-    var geoCall = function() {
+    var function =  onDeviceReady() {
         // Throw an error if no update is received every 30 seconds
         var options = { timeout: 10000 };
         watchID = navigator.geolocation.watchPosition(gpsYes, gpsNo, options);
