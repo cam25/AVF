@@ -7,7 +7,7 @@
 
     // Cordova is ready
     //
-    var onDeviceReady = function() {
+    function onDeviceReady() {
         // Throw an error if no update is received every 30 seconds
         var options = { timeout: 10000 };
         watchID = navigator.geolocation.watchPosition(gpsYes, gpsNo, options);
