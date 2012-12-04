@@ -17,12 +17,16 @@
     // onSuccess Geolocation
     //
  var gpsYes = function(location) {
-    var message = document.getElementById("geo"), html = [];
-    html.push("<img width='256' height='256' src='http://maps.google.com/maps/api/staticmap?center=", location.coords.latitude, ",", location.coords.longitude, "&markers=size:small|color:blue|", location.coords.latitude, ",", location.coords.longitude, "&zoom=14&size=256x256&sensor=false' />");
-    html.push("<p>Longitude: ", location.coords.longitude, "</p>");
-    html.push("<p>Latitude: ", location.coords.latitude, "</p>");
-    html.push("<p>Accuracy: ", location.coords.accuracy, " meters</p>");
-    message.innerHTML = html.join("");
+    var display = document.getElementById("geo");
+    var html = [];
+    var latitude = location.coords.latitude;
+    var longitude = location.coords.longitude;
+    var accuracy = location.coords.accuracy;
+    html.append("<img width='256' height='256' src='http://maps.google.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&markers=size:small|color:blue|" + latitude + "," + longitude + "&zoom=14&size=256x256&sensor=false' />");
+    html.push("<p>Longitude: " + longitude + "</p>");
+    html.push("<p>Latitude: " + latitude + "</p>");
+    html.push("<p>Accuracy: " + accuracy + " meters</p>");
+    display.innerHTML = html.join("");
 }
 
     // onError Callback receives a PositionError object
