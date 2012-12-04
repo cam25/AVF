@@ -17,7 +17,7 @@
     // onSuccess Geolocation
     //
  var gpsYes = function(location) {
-    var message = document.getElementById("message"), html = [];
+    var message = document.getElementById("geo"), html = [];
     html.push("<img width='256' height='256' src='http://maps.google.com/maps/api/staticmap?center=", location.coords.latitude, ",", location.coords.longitude, "&markers=size:small|color:blue|", location.coords.latitude, ",", location.coords.longitude, "&zoom=14&size=256x256&sensor=false' />");
     html.push("<p>Longitude: ", location.coords.longitude, "</p>");
     html.push("<p>Latitude: ", location.coords.latitude, "</p>");
@@ -28,6 +28,6 @@
     // onError Callback receives a PositionError object
     //
    var gpsNo = function(error) {
-    alert('Attempt to get location failed: ' + error.message);
+    alert('Gps Fail ' + error.message);
 } 
 onDeviceReady();
