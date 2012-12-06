@@ -10,7 +10,7 @@
     function onDeviceReady() {
         // Empty
         
-        navigator.notification.alert(message, alertCallback, [title], [buttonName])
+        navigator.notification.alert(message, [title], [buttonName])
     }
  
  function showAlert() {
