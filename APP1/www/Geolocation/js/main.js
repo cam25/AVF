@@ -36,7 +36,7 @@
     
     
 
-    $("#geoloc").on("click", function() {
+    $("#button").on("click", function() {
 	    
 	    onDeviceReady();
 	    
