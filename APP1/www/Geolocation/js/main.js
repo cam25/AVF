@@ -32,5 +32,7 @@
    var gpsNo = function(error) {
     alert('Gps Fail ' + error.message);
     
+    };
+    
     
 onDeviceReady()
