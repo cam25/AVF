@@ -4,16 +4,20 @@
 
     // PhoneGap is ready
     //
+    var message = "You Are the Winner!";
+    var title = "Game Over";
+    var buttonName = "Done";
     function onDeviceReady() {
         // Empty
+        
         navigator.notification.alert(message, alertCallback, [title], [buttonName])
     }
  
  function showAlert() {
         navigator.notification.alert(
-            'You are the winner!',  // message
-            'Game Over',            // title
-            'Done'                  // buttonName
+            message,  // message
+            title,            // title
+            buttonName                  // buttonName
         );
     }
     
