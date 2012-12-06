@@ -9,7 +9,7 @@
     //
     function onDeviceReady() {
         // Throw an error if no update is received every 30 seconds
-        var options = { timeout: 10000 };
+        var options = { timeout: 5000 };
         navigator.geolocation.watchPosition(gpsYes, gpsNo, options);
     };
     
