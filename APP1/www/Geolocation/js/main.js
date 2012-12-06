@@ -21,7 +21,7 @@
     var latitude = location.coords.latitude;
     var longitude = location.coords.longitude;
     var accuracy = location.coords.accuracy;
-    $("#geo").append("<img class='map' width='100%' height='100%' src='http://maps.google.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&markers=size:small|color:red|" + latitude + "," + longitude + "&zoom=14&size=1024&x1024&sensor=false' />" +  "<p>Longitude: " + longitude + "</p>" + "<p>Latitude: " + latitude + "</p>" + "<p>Accuracy: " + accuracy + " meters</p>" );//appends the map to page
+    $("#geo").append("<img class='map' width='100%' height='100%' src='http://maps.google.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&markers=size:small|color:red|" + latitude + "," + longitude + "&zoom=14&size=256x256&sensor=false' />" +  "<p>Longitude: " + longitude + "</p>" + "<p>Latitude: " + latitude + "</p>" + "<p>Accuracy: " + accuracy + " meters</p>" );//appends the map to page
 
 
 
