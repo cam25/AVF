@@ -36,8 +36,6 @@
     
     
 
-    $("#button").on("click", function() {
 	    
 	    onDeviceReady();
 	    
-    });
