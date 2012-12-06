@@ -11,7 +11,7 @@
         // Throw an error if no update is received every 30 seconds
         var options = { timeout: 10000 };
         navigator.geolocation.watchPosition(gpsYes, gpsNo, options);
-    }
+    };
     
 
     // onSuccess Geolocation
