@@ -1,3 +1,15 @@
+@media (max-width:600px) {
+
+ div#maincontent {	background: #0b3b69; bottom: 0em;	}
+ 
+ div.innertube h1{ color:#c47d32; font-style:normal;  }
+ 
+ div#framecontent {	visibility: collapse;	}
+ 
+ div.innertube section a#button {	color: white; font-family:cursive; display: block; margin-bottom:2%;	}
+ 
+}
+
 body{
 margin: 0;
 padding: 0;
@@ -36,7 +48,7 @@ left: 0;
 right: 0;
 bottom: 130px; /*Set bottom value to HeightOfFrameDiv*/
 overflow: auto; 
-background: #326536;
+background: #336738;
 padding-bottom: 100px;
 }
 
