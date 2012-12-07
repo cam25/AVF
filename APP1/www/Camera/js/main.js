@@ -1,4 +1,4 @@
- var pictureSource;   // picture source
+    var pictureSource;   // picture source
     var destinationType; // sets the format of returned value 
 
     // Wait for Cordova to connect with the device
@@ -15,61 +15,45 @@
     // Called when a photo is successfully retrieved
     //
     function onPhotoDataSuccess(imageData) {
-      // Uncomment to view the base64 encoded image data
-      // console.log(imageData);
+       console.log(imageData);
 
-      // Get image handle
-      //
-      var smallImage = $("#smallImage");
+      var smallImage = document.getElementById('smallImage');
 
-      // Unhide image elements
-      //
-      //smallImage.style.display = 'block';
 
-      // Show the captured photo
-      // The inline CSS rules are used to resize the image
-      //
       smallImage.src = "data:image/jpeg;base64," + imageData;
+      navigator.notification.alert(
+        'Photo Saved To Gallary',  // message
+        okay,                           // callback
+        'Photo Saved',              // title
+        'OK'                          // buttonName
+    );
     }
 
     // Called when a photo is successfully retrieved
     //
     function onPhotoURISuccess(imageURI) {
-      // Uncomment to view the image file URI 
        console.log(imageURI);
 
-      // Get image handle
-      //
-      var largeImage = $('#largeImage');
+      var largeImage = document.getElementById('largeImage');
 
-      // Unhide image elements
-      //
-      //largeImage.style.display = 'block';
-
-      // Show the captured photo
-      // The inline CSS rules are used to resize the image
-      //
       largeImage.src = imageURI;
+       navigator.notification.alert(
+        'Photo Saved To Gallary',  // message
+        okay,                           // callback
+        'Photo Saved',              // title
+        'OK'                          // buttonName
+    );
     }
 
-    // A button will call this function
-    //
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-        destinationType: destinationType.DATA_URL });
+        destinationType: destinationType.DATA_URL, targetWidth: 135,
+  targetHeight: 200,
+  saveToPhotoAlbum: true });
     }
 
-    // A button will call this function
-    //
-    function capturePhotoEdit() {
-      // Take picture using device camera, allow edit, and retrieve image as base64-encoded string  
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
-        destinationType: destinationType.DATA_URL });
-    }
 
-    // A button will call this function
-    //
     function getPhoto(source) {
       // Retrieve image file location from specified source
       navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
@@ -77,8 +61,6 @@
         sourceType: source });
     }
 
-    // Called if something bad happens.
-    // 
     function onFail(message) {
       alert('Failed because: ' + message);
     }
@@ -89,17 +71,10 @@
 	    
     });
     
-    $("#editPic").on("click", function() {
-	    
-	    capturePhotoEdit();
-    });
     
-    $("#gallery").on("click", function() {
+    $("#gallery1").on("click", function() {
 	    
 	    getPhoto(pictureSource.PHOTOLIBRARY);
     });
     
-    $("#photoAlbum").on("click", function() {
-	    
-	    getPhoto(pictureSource.SAVEDPHOTOALBUM);
-    });
+   

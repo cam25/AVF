@@ -94,7 +94,7 @@
 	    capturePhotoEdit();
     });
     
-    $("#gallery").on("click", function() {
+    $("#gallery1").on("click", function() {
 	    
 	    getPhoto(pictureSource.PHOTOLIBRARY);
     });

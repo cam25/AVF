@@ -3,14 +3,33 @@ html{
 }
 
 
-    
+
 #smallImage{
-	display: block;width:60px;height:60px; 
+	display:block;
+	
+	
+	
+
+	
+}
+    
+#largeImage{
+	display:block;
+	height:100%;
+	width:100%;
+
+	
+}
+div#categories{
+	display: center;
+	text-align: center;
+	
 	
 }
 
-#largeImage{
-	display: block ;
+h2{
+	text-align: center;
+	
 }
 
 .button{
