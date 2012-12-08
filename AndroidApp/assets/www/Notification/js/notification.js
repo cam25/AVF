@@ -1,22 +1,11 @@
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // Cordova is ready
-    //
-    var message = 'Are you sure you want Gallery';
+var message = 'Are you sure you want Gallery';
     var title = "Choices";
     var buttonLabels = "Yes, No";
-    function onDeviceReady() {
-		showConfirm();	    
-	    };
+    
 
     // process the confirmation dialog result
     function onConfirm(buttonIndex) {
-    if( buttonIndex === "Yes"){
-        alert('Okay, Heres Your Pictures ' + buttonIndex);
-        }
-        else {
-      
-        }
+        alert('You selected button ' + buttonIndex);
     }
 
     // Show a custom confirmation dialog
@@ -30,10 +19,3 @@
             buttonLabels          // buttonLabels
         );
     }
-    
-    onDeviceReady();
-    $('#alert').on("click", function(){
-    
-	    
-	    
-    });

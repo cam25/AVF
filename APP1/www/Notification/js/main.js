@@ -2,9 +2,9 @@
 
     // Cordova is ready
     //
-    var message = 'You are the winner!';
-    var title = "game over";
-    var buttonLabels = "restart, exit";
+    var message = 'Are you sure you want Gallery';
+    var title = "Choices";
+    var buttonLabels = "Yes, No";
     function onDeviceReady() {
 		showConfirm();	    
 	    };
@@ -26,7 +26,7 @@
         );
     }
     
-    onDeviceReady();
+    
     $('#alert').on("click", function(){
     
 	    

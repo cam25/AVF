@@ -1,1 +1,1 @@
-alert("Suited and Booted!, click 'OK' to continue.");
+onDeviceReady();

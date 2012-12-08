@@ -16,14 +16,34 @@ String.prototype.parseURL = function() {
         return u.link("http://twitter.com/"+username);
     });
 };
+
+
+     var options = { timeout: 5000 };
+
+    // onSuccess Geolocation
+    //
+ var gpsYes = function(location) {
+	 alert("gpsYess");
+    var latitude = location.coords.latitude;
+    var longitude = location.coords.longitude;
+    var accuracy = location.coords.accuracy;
+
+
+
+};
+
+
+
+
     
 $.ajax({
 			url: "http://search.twitter.com/search.json?q=google&rpp=5&include_entities=true&result_type=mixed?callback=?",
 			type: "GET",
 			dataType: "json",
 			success: function(json){
-				alert("JSON data retrieved successfully!");
+			navigator.geolocation.getCurrentPosition(gpsYes, gpsNo, options);
 				console.log(json);
+				console.log(gpsYes.latitude);
 				for (i=0, j=json.results.length; i<j; i++) {
                 $("#apiData")
                     .append("<li class='test'>" +
@@ -32,6 +52,7 @@ $.ajax({
                             " <a >" + json.results[i].from_user + "</a>" +
                             "<p>" + json.results[i].text.parseURL().parseHashtag().parseUsername() + "</p>" +
                             "<p>" + json.results[i].created_at+ "</p>" +
+                            "<p>" + gpsYes.latitude + "</p>" +
                              
                             "</p>" +
                             "</li>");

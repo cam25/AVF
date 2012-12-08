@@ -9,14 +9,16 @@
     //
     function onDeviceReady() {
         // Throw an error if no update is received every 30 seconds
-        var options = { timeout: 5000 };
-        navigator.geolocation.getCurrentPosition(gpsYes, gpsNo, options, { enableHighAccuracy: true });
+         alert("Gps Fire");
+        var options = { enableHighAccuracy: true };
+        navigator.geolocation.getCurrentPosition(gpsYes, gpsNo, options);
     };
     
 
     // onSuccess Geolocation
     //
  var gpsYes = function(location) {
+	 alert("gpsYess");
     var display = $("#geo"); // grabbing the div id geo
     var latitude = location.coords.latitude;
     var longitude = location.coords.longitude;

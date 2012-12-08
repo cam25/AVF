@@ -75,6 +75,7 @@
     $("#gallery1").on("click", function() {
 	    
 	    getPhoto(pictureSource.PHOTOLIBRARY);
+                      showConfirm();
     });
     
    
