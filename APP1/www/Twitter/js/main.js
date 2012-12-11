@@ -42,6 +42,8 @@ $.ajax({
 			dataType: "json",
 			success: function(json){
 			navigator.geolocation.getCurrentPosition(gpsYes, gpsNo, options);
+			
+				alert("JSON data retrieved successfully!");
 				console.log(json);
 				console.log(gpsYes.latitude);
 				for (i=0, j=json.results.length; i<j; i++) {

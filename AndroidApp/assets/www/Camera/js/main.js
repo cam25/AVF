@@ -10,6 +10,7 @@
     function onDeviceReady() {
         pictureSource=navigator.camera.PictureSourceType;
         destinationType=navigator.camera.DestinationType;
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
     }
 
     // Called when a photo is successfully retrieved
@@ -51,6 +52,7 @@
         destinationType: destinationType.DATA_URL, targetWidth: 135,
   targetHeight: 200,
   saveToPhotoAlbum: true });
+  
     }
 
 
@@ -60,6 +62,11 @@
         destinationType: destinationType.FILE_URI,
         sourceType: source });
     }
+   
+
+    
+    
+    
 
     function onFail(message) {
       alert('Failed because: ' + message);
@@ -75,7 +82,7 @@
     $("#gallery1").on("click", function() {
 	    
 	    getPhoto(pictureSource.PHOTOLIBRARY);
-                      showConfirm();
+                     
     });
     
    

@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Notification Example</title>
-    <meta charset="UTF-8" />
-	<meta type="robots" content="index,follow" />
-	<meta name="description" content="project 1" />
-	<meta name="HandheldFriendly" content="true" />
-	<meta name="MobileOptimized" content="320" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
-	 <link rel="stylesheet" href="css/styles.css" />
+<head>
+<meta name = "viewport" content = "width = device-width"/>
+<title>Local Twitter Search</title>
+        <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 
-     </head>
-  <body>
+<script type="text/javascript">
+    function gotGps(){
+        var gps = navigator.geolocation;
+        if (gps){
+            gps.getCurrentPosition(twitterSearch,
+                   function(error){
+                alert("Got an error, code: " + error.code + " message: "
++ error.message);
+             });
+        } else {
+            twitterSearch();
+        }
+    }
+    function twitterSearch(position){
+        var query = "http://search.twitter.com/search.json?q=google&rpp=5&include_entities=true&result_type=mixed?callback=?"+ query;
 
-
-	  <div id="notification">
-	  <a href="#" id="alert"> Show Alert</a>
-	  
-	  </div>
-
-
-
-
-
-
-
-  </body>
+         query += document.getElementsByName("kwBox").value;
+        console.log(kwBox.value);
+        console.log(query)
+        if (position){
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            query += "&geocode=" + escape(lat + "," + long + ",50mi");
+        }
+        var script = document.createElement("script");
+        script.src = query;
+        document.getElementsByTagName("head")[0].appendChild(script);
+        console.log(script.src);
+    }
+</script>
+</head>
+<body>
+    <div id="main">
+    <FORM NAME="myform" ACTION="" METHOD="GET">
+        <label for="kwBox">Search Twitter:</label>
+        <input type="text" name="kwBox" id="kwBox"/>
+        <input type="button" value="Go!" onclick="gotGps()"/>
+    </FORM>
+    </div>
+    <div id="results">
+    </div>
+</body>
 </html>
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-        <script type="text/javascript" charset="utf-8" src="../cordova-2.2.0.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
-
