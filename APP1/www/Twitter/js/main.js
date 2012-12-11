@@ -54,7 +54,7 @@ $.ajax({
                             " <a >" + json.results[i].from_user + "</a>" +
                             "<p>" + json.results[i].text.parseURL().parseHashtag().parseUsername() + "</p>" +
                             "<p>" + json.results[i].created_at+ "</p>" +
-                            "<p>" + gpsYes.latitude + "</p>" +
+                            "<p>" + latitude + "</p>" +
                              
                             "</p>" +
                             "</li>");

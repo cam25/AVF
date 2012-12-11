@@ -5,7 +5,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="lib" path="libs/cordova-2.2.0.jar"/>
-	<classpathentry kind="lib" path="/google-play-services_lib/libs/google-play-services.jar"/>
-	<classpathentry kind="lib" path="/google-play-services_lib/libs/google-play-services.jar.properties"/>
+	<classpathentry kind="lib" path="/Users/cameronmozie/Downloads/sensorsimulator-2.0-rc1/bin/sensorsimulator-2.0-rc1.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
