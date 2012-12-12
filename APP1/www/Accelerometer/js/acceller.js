@@ -1,3 +1,10 @@
+// Paste your code in here!
+
+
+
+
+
+
 // The watch id references the current `watchAcceleration`
 
 
@@ -13,13 +20,13 @@ function onDeviceReady() {
                          if( watchID ===  0){
                          startWatch();
                          
-                         $("#watchButn").html("stop watching")
+                         $("#watchButn").html("stop watching");
                          }else {
-                         stopWatch()
-                         $("#watchButn").html("Start Watching")
+                         stopWatch();
+                         $("#watchButn").html("Start Watching");
                          watchID = 0;
                          }
-                         })
+                         });
 };
 
 // Start watching the acceleration

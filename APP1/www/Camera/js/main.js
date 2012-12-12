@@ -10,7 +10,6 @@
     function onDeviceReady() {
         pictureSource=navigator.camera.PictureSourceType;
         destinationType=navigator.camera.DestinationType;
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
     }
 
     // Called when a photo is successfully retrieved
@@ -70,15 +69,15 @@
     }
     
     $("#takePic").on("click", function() {
-	    
-	    capturePhoto();
-	    
+        
+        capturePhoto();
+        
     });
     
     
     $("#gallery1").on("click", function() {
-	    
-	    getPhoto(pictureSource.PHOTOLIBRARY);
+        
+        getPhoto(pictureSource.PHOTOLIBRARY);
                       showConfirm();
     });
     
