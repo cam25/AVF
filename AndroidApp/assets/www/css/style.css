@@ -6,7 +6,7 @@
  
  div#framecontent {	visibility: collapse;	}
  
- div.innertube section a#button {	color: white; font-family:cursive; display: block; margin-bottom:2%;	}
+ div.innertube section a.button {	color: white; font-family:cursive; display: block; margin-bottom:2%;	}
  
 }
 
@@ -153,7 +153,7 @@ box-shadow: 7px 7px 8px #0f0f0f;
 -moz-box-shadow: 7px 7px 8px #0f0f0f;
 filter: progid:DXImageTransform.Microsoft.dropShadow(color=#0f0f0f, offX=7, offY=7, positive=true);
 }
-}
+
 * html body{ /*IE6 hack*/
 padding: 0 0 130px 0; /*Set value to (0 0 HeightOfFrameDiv 0)*/
 }

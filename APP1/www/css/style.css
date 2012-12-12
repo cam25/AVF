@@ -6,7 +6,7 @@
  
  div#framecontent {	visibility: collapse;	}
  
- div.innertube section a#button {	color: white; font-family:cursive; display: block; margin-bottom:2%;	}
+ div.innertube section a.button {	color: white; font-family:cursive; display: block; margin-bottom:2%;	}
  
 }
 
