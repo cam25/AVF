@@ -38,7 +38,7 @@ function gotGps(){
         if (position){//postion from coords 
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
-            query += "&geocode=" + escape(latitude + "," + longitude + ",50mi");//escape used to encode inside strings inside url
+            query += "&geocode=" + escape(latitude + "," + longitude + ",50mi");//escape used to encode  strings inside url
         }
         var script = document.createElement("script");
         script.src = query;
