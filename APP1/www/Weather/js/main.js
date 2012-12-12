@@ -86,7 +86,7 @@ console.log(url2);
 });
 
 
-var query = escape('select item from weather.forecast where geo="lat"'),
+var query = escape('select item from weather.forecast where location="20785"'),
     url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
 
 
