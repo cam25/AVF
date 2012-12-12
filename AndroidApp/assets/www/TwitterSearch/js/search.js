@@ -1,6 +1,6 @@
 String.prototype.parseHashtag = function() {
     return this.replace(/[#]+[A-Za-z0-9-_]+/g, function(t) {
-        var tag = t.replace("#","%23")
+        var tag = t.replace("#","%23");
         return t.link("http://search.twitter.com/search?q="+tag);
     });
 };
@@ -12,7 +12,7 @@ String.prototype.parseURL = function() {
     };
     String.prototype.parseUsername = function() {
     return this.replace(/[@]+[A-Za-z0-9-_]+/g, function(u) {
-        var username = u.replace("@","")
+        var username = u.replace("@","");
         return u.link("http://twitter.com/"+username);
     });
 };
@@ -22,8 +22,7 @@ function gotGps(){
         if (gps){//if gps has error 
             gps.getCurrentPosition(twitterSearch,
                    function(error){
-                alert("Got an error, code: " + error.code + " message: "
-+ error.message);
+                alert("Got an error, code: " + error.code + " message: "+ error.message);
              });
         } else {//run search function
             twitterSearch();
@@ -34,7 +33,7 @@ function gotGps(){
 
          query += $("searchField").value;
         console.log(searchField.value);
-        console.log(query)
+        console.log(query);
         if (position){//postion from coords 
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
@@ -48,13 +47,13 @@ function gotGps(){
         console.log(script.src);
     }
     function searchResults(response){
-		
-		var tweets = response.results;
-		console.log(tweets);
-		for (i=0, j=tweets.length; i<j; i++) {
+        
+        var tweets = response.results;
+        console.log(tweets);
+        for (i=0, j=tweets.length; i<j; i++) {
               
                 
-		 $("#results")
+         $("#results")
                     .append("<li class='test'>" +
                             "<p>" +
                             "<img class='twitpic' src='"  + tweets[i].profile_image_url + "' />" +
@@ -65,14 +64,14 @@ function gotGps(){
                              
                             "</p>" +
                             "</li>");
-		
-		
-		}
-		};
-	
+        
+        
+        }
+        };
+    
     
     $("#GO").on("click", function() {
     
-	   gotGps();
-	    
+       gotGps();
+        
     });
