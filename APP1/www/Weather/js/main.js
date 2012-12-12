@@ -31,10 +31,6 @@ var gps = navigator.geolocation;
 		} else {
 			
 		}
-	
-
-
-
 
 function locationError(error){
     switch(error.code) {
@@ -82,11 +78,11 @@ console.log(url2);
                             "</p>" +
                             "</li>");
    
-    console.log(data.ResultSet.Results);
+    console.log(data.ResultSet.Results[0].woeid);
 });
 
 
-var query = escape('select item from weather.forecast where location="20785"'),
+var query = escape('select item from weather.forecast where woeid="12766322"'),
     url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
 
 
