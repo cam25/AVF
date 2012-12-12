@@ -26,6 +26,11 @@ max-height: 100%;
 	
 }
 
+.weather{
+	border: 0;
+	
+}
+
 #framecontent{
 position: absolute; 
 bottom: 0; 
@@ -87,7 +92,36 @@ transform: rotate(-360deg);
 	padding:0px;
 	
 }
+.button{
+	
+  display:inline-table;
+    text-decoration: none;
+    font: bold 15px/15px HelveticaNeue, Arial;
+    padding: 8px 11px;
+    color: #1576d1;
+    border: 1px solid #353333;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(bottom, rgb(9,18,3) 14%, rgb(28,66,66) 57%);
+background-image: -o-linear-gradient(bottom, rgb(9,18,3) 14%, rgb(28,66,66) 57%);
+background-image: -moz-linear-gradient(bottom, rgb(9,18,3) 14%, rgb(28,66,66) 57%);
+background-image: -webkit-linear-gradient(bottom, rgb(9,18,3) 14%, rgb(28,66,66) 57%);
+background-image: -ms-linear-gradient(bottom, rgb(9,18,3) 14%, rgb(28,66,66) 57%);
 
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.14, rgb(9,18,3)),
+	color-stop(0.57, rgb(28,66,66))
+);
+box-shadow: 7px 7px 8px #0f0f0f;
+-webkit-box-shadow: 7px 7px 8px #0f0f0f;
+-moz-box-shadow: 7px 7px 8px #0f0f0f;
+filter: progid:DXImageTransform.Microsoft.dropShadow(color=#0f0f0f, offX=7, offY=7, positive=true);
+}
 
 #button{
 	
@@ -119,7 +153,7 @@ box-shadow: 7px 7px 8px #0f0f0f;
 -moz-box-shadow: 7px 7px 8px #0f0f0f;
 filter: progid:DXImageTransform.Microsoft.dropShadow(color=#0f0f0f, offX=7, offY=7, positive=true);
 }
-}
+
 * html body{ /*IE6 hack*/
 padding: 0 0 130px 0; /*Set value to (0 0 HeightOfFrameDiv 0)*/
 }

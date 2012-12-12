@@ -18,6 +18,9 @@
 //  });
 //});
 
+if (networkState === Connection.NONE){
+  alert('No internet connection.. ');
+};
 
 var gps = navigator.geolocation;
 		if (gps){
