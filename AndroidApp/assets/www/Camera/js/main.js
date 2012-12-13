@@ -27,7 +27,7 @@
     // Called when a photo is successfully retrieved
     //
     function onPhotoURISuccess(imageURI) {
-       console.log(imageURI);
+       alert(imageURI);
 
       var largeImage = document.getElementById('largeImage');
 
@@ -37,9 +37,11 @@
 
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 70,
-        destinationType: destinationType.DATA_URL, targetWidth: 135,
-  targetHeight: 200,
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL, encodingType: Camera.EncodingType.JPEG,
+          targetWidth: 100,
+          targetHeight: 100,
+          popoverOptions: CameraPopoverOptions,
   saveToPhotoAlbum: true });
   
     }
