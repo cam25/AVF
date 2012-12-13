@@ -30,12 +30,12 @@ margin: auto;
 
 .temp{
 	
-	font-size: 50px;
+	font-size: 3.125em;
 	
 }
 
 .degrees{
-	font-size: 50px;
+	font-size: 3.125em;
 }
 
 .title{
@@ -48,14 +48,14 @@ margin: auto;
 .button{
     display: inline-block;
     text-decoration: none;
-    font: bold 15px/15px HelveticaNeue, Arial;
-    padding: 8px 11px;
-    color: #555;
-    border: 1px solid #dedede;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
+    font: bold 0.9375em/0.9375em, Arial;
+    padding: 0.5em 0.675em;
+    color: #545454;
+    border: 0.0625em solid #dedede;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    -khtml-border-radius: 0.625em;
+    border-radius: 0.625em;
 }
 
 .button{
@@ -65,18 +65,18 @@ margin: auto;
     background: -moz-linear-gradient(top,  #becbd6, #88a1b4);
     border-color: #a2afb8 #8696a1 #6f818f;
     color: #515f6a;
-    text-shadow: 0 1px 0 #c4d0d9;
-    -webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;
-    -moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;
+    text-shadow: 0 0.0625em 0 #c4d0d9;
+    -webkit-box-shadow: 0 0.0625em 0.0625em #d3d3d3, inset 0 0.0625em 0 #ced8e0;
+    -moz-box-shadow: 0 0.0625em 0.0625em #d3d3d3, inset 0 0.0625em 0 #ced8e0;
     box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;    
 }
 .button:hover{
     background: #adbfcb;
     border-color: #8996a0 #798791 #6c7a85;
-    text-shadow: 0 1px 0 #ced9e0;
-    -webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;
-    -moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;
-    box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;    
+    text-shadow: 0 0.0625em 0 #ced9e0;
+    -webkit-box-shadow: 0 0.0625em 0.0625em #d3d3d3, inset 0 0.0625em 0 #c2cfd8;
+    -moz-box-shadow: 0 0.0625em 0.0625em #d3d3d3, inset 0 0.0625em 0 #c2cfd8;
+    box-shadow: 0 0.0625em 0.0625em #d3d3d3, inset 0 0.0625em 0 #c2cfd8;    
     
     
     
