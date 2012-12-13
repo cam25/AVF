@@ -17,7 +17,10 @@
 //  
 //  });
 //});
-
+var connect = navigator.connection.type
+if (connect){
+  alert(connect);
+};
 
 var gps = navigator.geolocation;
 		if (gps){
