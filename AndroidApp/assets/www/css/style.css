@@ -155,7 +155,7 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#0f0f0f, offX=7, offY
 }
 
 * html body{ /*IE6 hack*/
-padding: 0 0 130px 0; /*Set value to (0 0 HeightOfFrameDiv 0)*/
+padding: 0 0 8.125em 0; /*Set value to (0 0 HeightOfFrameDiv 0)*/
 }
 
 * html #maincontent{ /*IE6 hack*/
