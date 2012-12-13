@@ -21,12 +21,7 @@
 
 
       smallImage.src = "data:image/jpeg;base64," + imageData;
-      navigator.notification.alert(
-        'Photo Saved To Gallary',  // message
-        okay,                           // callback
-        'Photo Saved',              // title
-        'OK'                          // buttonName
-    );
+     
     }
 
     // Called when a photo is successfully retrieved
@@ -37,17 +32,12 @@
       var largeImage = document.getElementById('largeImage');
 
       largeImage.src = imageURI;
-       navigator.notification.alert(
-        'Photo Saved To Gallary',  // message
-        okay,                           // callback
-        'Photo Saved',              // title
-        'OK'                          // buttonName
-    );
+       
     }
 
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 70,
         destinationType: destinationType.DATA_URL, targetWidth: 135,
   targetHeight: 200,
   saveToPhotoAlbum: true });
@@ -57,7 +47,7 @@
 
     function getPhoto(source) {
       // Retrieve image file location from specified source
-      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
+      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 70, 
         destinationType: destinationType.FILE_URI,
         sourceType: source });
     }

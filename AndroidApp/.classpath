@@ -6,5 +6,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="lib" path="libs/cordova-2.2.0.jar"/>
 	<classpathentry kind="lib" path="/Users/cameronmozie/Downloads/sensorsimulator-2.0-rc1/bin/sensorsimulator-2.0-rc1.jar"/>
+	<classpathentry kind="lib" path="/Users/cameronmozie/Desktop/cordova-1.9.0.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
