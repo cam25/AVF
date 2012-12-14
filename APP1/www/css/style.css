@@ -27,9 +27,14 @@ max-height: 100%;
 }
 
 .weather{
-	border: 0;
+padding-top: 0px;;
+	padding-left: 0.125em;
+	padding-right: 0.125em;
+
 	
 }
+
+
 
 #framecontent{
 position: absolute; 
@@ -88,10 +93,7 @@ transition: all 0.5s ease-in-out;
 transform: rotate(-360deg);
 
 }
-.weather{
-	padding:0px;
-	
-}
+
 .button{
 	
   display:inline-table;

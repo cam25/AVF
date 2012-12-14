@@ -1,15 +1,21 @@
+//parses hashtag into link via regular expressions 
 String.prototype.parseHashtag = function() {
     return this.replace(/[#]+[A-Za-z0-9-_]+/g, function(t) {
         var tag = t.replace("#","%23");
         return t.link("http://search.twitter.com/search?q="+tag);
     });
 };
+//parses url into link via regular expressions 
+
 String.prototype.parseURL = function() {
     return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&~\?\/.=]+/g, function(url) {
         return url.link(url);
     });
     
     };
+    
+    //parses userName into link via regular expressions 
+
     String.prototype.parseUsername = function() {
     return this.replace(/[@]+[A-Za-z0-9-_]+/g, function(u) {
         var username = u.replace("@","");
@@ -29,9 +35,9 @@ function gotGps(){
         }
     }
     function twitterSearch(position){
-        var query = "http://search.twitter.com/search.json?callback=searchResults&q=";
+        var query = "http://search.twitter.com/search.json?callback=searchResults&q=";//twittersearch query with searchResults function call
 
-         query += $("searchField").value;
+         query += $("searchField").value; //adds whats in search field to end of query
         console.log(searchField.value);
         console.log(query);
         if (position){//postion from coords 
@@ -46,13 +52,13 @@ function gotGps(){
         
         console.log(script.src);
     }
-    function searchResults(response){
+    function searchResults(response){//search results 
         
         var tweets = response.results;
         console.log(tweets);
-        for (i=0, j=tweets.length; i<j; i++) {
+        for (i=0, j=tweets.length; i<j; i++) {//looping through search responses
               
-                
+                //appending results with location to page
          $("#results")
                     .append("<li class='test'>" +
                             "<p>" +

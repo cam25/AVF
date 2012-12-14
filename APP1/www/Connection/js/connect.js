@@ -7,5 +7,5 @@ function onDeviceReady() {
 }
 
 var connectionType = function(){
-      alert(navigator.network.connection.type);
+      alert(navigator.network.connection.type);//alerts connection type
     }

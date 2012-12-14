@@ -1,10 +1,3 @@
-// Paste your code in here!
-
-
-
-
-
-
 // The watch id references the current `watchAcceleration`
 
 
@@ -16,13 +9,13 @@ var watchID = 0;
 //
 function onDeviceReady() {
     
-    $("#watchButn").bind("touchstart", function() {
-                         if( watchID ===  0){
+    $("#watchButn").bind("click", function() {
+                         if( watchID ===  0){//if watch is 0 start watch on click
                          startWatch();
                          
-                         $("#watchButn").html("stop watching");
+                         $("#watchButn").html("stop watching");//prints stop watching to page
                          }else {
-                         stopWatch();
+                         stopWatch();//if wachID isnt 0 stop watching
                          $("#watchButn").html("Start Watching");
                          watchID = 0;
                          }
@@ -34,7 +27,7 @@ function onDeviceReady() {
 function startWatch() {
     
     // Update acceleration every 3 seconds
-    var options = { frequency: 3000 };
+    var options = { frequency: 3000 };//timer
     
     watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 }
@@ -49,7 +42,7 @@ function stopWatch() {
 }
 
 // onSuccess: Get a snapshot of the current acceleration
-//
+//populates the input fields with the values of the accelerometer
 function onSuccess(acceleration) {
     $("#txtX").attr("value", acceleration.x);
     $("#txtY").attr("value", acceleration.y);

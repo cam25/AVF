@@ -9,7 +9,7 @@
         $("#create").on("click" , function() {
         var contact = navigator.contacts.create();
         contact.displayName = $("#txtFirst").attr("value") + " " + $("#txtLast").attr("value");;
-        contact.nickname = $("#txtFirst").attr("value") +  " " + $("#txtLast").attr("value");;       //specify both to support all devices
+        contact.nickname = $("#txtFirst").attr("value") +  " " + $("#txtLast").attr("value");;       ;//populates the first/last name with data inside input field.
         var name = new ContactName();
         name.givenName = $("#txtFirst").attr("value");
         name.familyName = $("#txtLast").attr("value");
@@ -30,7 +30,7 @@
                   
                   var fields = ["*"];
                   var options = {
-                  filter: $("#txtFirst").attr("value"),
+                  filter: $("#txtFirst").attr("value"),//sets Find on txtFirstName input field by first name
                   
                   multiple: true //returns multiple contacts with similar parameters
                   
@@ -39,7 +39,7 @@
                   navigator.contacts.find( fields, function(contacts){
                                           
                                           
-                                          $("#txtFirst").attr("value", contacts[0].name.givenName);
+                                          $("#txtFirst").attr("value", contacts[0].name.givenName);//txtFirst input field populated with contact properties
                                           $("#txtLast").attr("value", contacts[0].name.familyName);
                                           $("#txtEmail").attr("value", contacts[0].emails.value);
                                           $("#txtNumber").attr("value", contacts[0].name.phoneNumbers[0].value);

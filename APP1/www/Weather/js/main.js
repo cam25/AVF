@@ -21,7 +21,7 @@
 
 
 var gps = navigator.geolocation;
-		if (gps){
+		if (gps){//if gps run success
 			alert("gps enabled");
 			gps.getCurrentPosition(locationSuccess, locationError,
 				function(error){
@@ -32,7 +32,7 @@ var gps = navigator.geolocation;
 		} else {
 			
 		}
-
+//show error 
 function locationError(error){
     switch(error.code) {
         case error.TIMEOUT:
@@ -50,6 +50,7 @@ function locationError(error){
     }
 
 }
+//success 
 function locationSuccess(position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
@@ -59,14 +60,16 @@ console.log(lat);
     // We will make further requests to Yahoo's APIs here
 
 var query = escape("lat"),
-    url = "http://where.yahooapis.com/geocode?q="+lat +"," +lon+"&gflags=R&flags=JT&appid=cmozie&callback=?",
-    url2 = "http://weather.yahooapis.com/forecastrss?w=12766322";
+    url = "http://where.yahooapis.com/geocode?q="+lat +"," +lon+"&gflags=R&flags=JT&appid=cmozie&callback=?",//url to acquire geolocation with geo coordinates 
+    url2 = "http://weather.yahooapis.com/forecastrss?w=12766322";//url to get forcast based on geolocation results woeid
     
 
 
 $.getJSON(url, function (data) {
 console.log(data.ResultSet.Results);
 console.log(url2);
+
+//appending coords + timezone to screen
     $("#weatherApi")
     .append("<li class='test'>" +
                             "<p>" +
@@ -79,16 +82,17 @@ console.log(url2);
                             "</p>" +
                             "</li>");
    
-    console.log(data.ResultSet.Results[0].woeid);
+    console.log(data.ResultSet.Results[0].woeid);//woeid used for search
 });
 
 
-var query = escape('select item from weather.forecast where woeid="12766322"'),
-    url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
+var query = escape('select item from weather.forecast where woeid="12766322"'),//escape converts string to url format, allows search by woeid provided through geo
+    url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";//adds query to search
 
 
 $.getJSON(url, function (data) {
 console.log(data);
+//appending forcast
     $("#weatherApi").append(data.query.results.channel.item.title + "<br />" + data.query.results.channel.item.description + "<br />");
     console.log(data.query.results.channel.item);
 });

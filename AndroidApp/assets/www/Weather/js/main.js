@@ -18,12 +18,11 @@
 //  });
 //});
 var connect = navigator.connection.type
-if (connect){
-  alert(connect);
+if (connect){//connection api mashup if connection proceed with gps 
 };
 
 var gps = navigator.geolocation;
-		if (gps){
+		if (gps){//if gps
 			alert("gps enabled");
 			gps.getCurrentPosition(locationSuccess, locationError,
 				function(error){
@@ -34,7 +33,7 @@ var gps = navigator.geolocation;
 		} else {
 			
 		}
-
+//show error
 function locationError(error){
     switch(error.code) {
         case error.TIMEOUT:
@@ -52,6 +51,7 @@ function locationError(error){
     }
 
 }
+//success
 function locationSuccess(position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
@@ -61,7 +61,7 @@ console.log(lat);
     // We will make further requests to Yahoo's APIs here
 
 var query = escape("lat"),
-    url = "http://where.yahooapis.com/geocode?q="+lat +"," +lon+"&gflags=R&flags=JT&appid=cmozie&callback=?",
+    url = "http://where.yahooapis.com/geocode?q="+lat +"," +lon+"&gflags=R&flags=JT&appid=cmozie&callback=?",//url to acquire geolocation with geo coordinates
     url2 = "http://weather.yahooapis.com/forecastrss?w=12766322";
     
 
@@ -69,6 +69,8 @@ var query = escape("lat"),
 $.getJSON(url, function (data) {
 console.log(data.ResultSet.Results);
 console.log(url2);
+
+//append geo to page
     $("#weatherApi")
     .append("<li class='test'>" +
                             "<p>" +
@@ -81,7 +83,7 @@ console.log(url2);
                             "</p>" +
                             "</li>");
    
-    console.log(data.ResultSet.Results[0].woeid);
+    console.log(data.ResultSet.Results[0].woeid);//woeid used for search
 });
 
 
