@@ -2,9 +2,25 @@ html{
   background: #164f87;
 }
 
+.panel{
+	text-align: center;
+	-webkit-border-radius: 0.5em;
+		-moz-border-radius: 0.5em;
+		border-radius: 0.5em;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow-y: hidden;
+		background-color: #8fa9aa;
+	font-size: xx-large;
+	padding: 10px;
+width: 500px;
+border:1px solid #ccc;
+margin: auto;
+}
 
 .button{
-    display: inline-block;
+    display:table;
     text-decoration: none;
     font: bold 0.9375em/0.9375em, Arial;
     padding: 0.5em 0.675em;

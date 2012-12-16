@@ -1,10 +1,33 @@
 html{
   background: #164f87;
 }
-
+.labels{
+	-webkit-border-radius: 0.5em;
+		-moz-border-radius: 0.5em;
+		border-radius: 0.5em;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow-y: hidden;
+		background-color: #8fa9aa;
+	font-size: xx-large;
+	padding: 10px;
+width: 500px;
+border:1px solid #ccc;
+margin: auto;
+}
+#firstName{
+text-align: left;	
+}
+#txtFirst{
+	text-align: left;
+}
+#lastName{
+text-align: left;	
+}
 
 .button{
-    display: inline-block;
+    display:table;
     text-decoration: none;
     font: bold 0.9375em/0.9375em, Arial;
     padding: 0.5em 0.675em;
@@ -14,6 +37,7 @@ html{
     -moz-border-radius: 0.625em;
     -khtml-border-radius: 0.625em;
     border-radius: 0.625em;
+    margin-top:10px;
 }
 
 .button{

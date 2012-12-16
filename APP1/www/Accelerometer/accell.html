@@ -3,6 +3,7 @@
     <head>
         <title>Accelerometer</title>
         <meta charset="UTF-8" />
+        <meta type="robots" content="index,follow" />
         <meta name="description" content="project 1" />
         <meta name="HandheldFriendly" content="true" />
         <meta name="MobileOptimized" content="320" />
@@ -12,7 +13,7 @@
     </head>
     <body>
         
-        <div id="accelerometer">Waiting for accelerometer...</div>
+        <div id="accelerometer"></div>
         <div class="panel">
             
             <label id="lblx"> Acceleration X:</label>
@@ -24,12 +25,12 @@
             <label id="lblZ"> Acceleration Z:</label>
             <input id="txtZ" type="number" value="0"/>
             
-            <button class="button" id="watchButn" class="hotspot"> Watch Accelerometer </button>
+            <button id="watchButn" class="button"> Watch Accelerometer </button>
             
-            
-            <a class="button" href="../index.html">BACK</a>
-            
-            </body>
+        </div>
+        <a class="button" href="../index.html">BACK</a>
+        
+    </body>
 </html>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/cordova-2.2.0.js"></script>

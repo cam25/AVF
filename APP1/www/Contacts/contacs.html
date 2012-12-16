@@ -3,41 +3,46 @@
 
 
 <html>
-<head>
-	<title>Contacts API</title>
-	<meta charset="UTF-8" />
-	<meta name="description" content="project 1" />
-	<meta name="HandheldFriendly" content="true" />
-	<meta name="MobileOptimized" content="320" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--CSS-->
-	<link rel="stylesheet" href="css/styles.css" />
-
-</head>
-<body>
-	<div class="labels">
-		
-		<label id="firstName">First Name:</label>
-		<input id="txtFirst" placeholder="First Name" />
-		
-		<label id="lastName">Last name:</label>
-		<input id="txtLast" placeholder="Last Name" />
-		
-		<label id="email">Email</label>
-		<input id="txtEmail" placeholder="email" />
-		
-		<label id="mobileNumber">Cell Phone</label>
-		<input id="txtNumber" placeholder="555-555-5555">
-		
-		<!--buttons-->
-		<button class="button" id="create">Create Contact</button>
-		<button class="button" id="find">Find Contact</button>
-
-<a class="button" href="../index.html">Home</a>
-	<!--jQuery-->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-    <script type="text/javascript" src="js/cordova-2.2.0.js"></script>
-	<script type="text/javascript" src="js/contacts.js"></script>
-
-</body>
+    <head>
+        <title>Contacts API</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="project 1" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--CSS-->
+        <link rel="stylesheet" href="css/styles.css" />
+        
+    </head>
+    <body>
+        <div class="labels">
+            <ul>
+                
+                <li><label id="firstName">First Name:</label>
+                    <input id="txtFirst" placeholder="First Name" />
+                </li>
+                <li>
+                    <label id="lastName">Last name:</label>
+                    <input id="txtLast" placeholder="Last Name" />
+                </li>
+                <li><label id="email">Email:</label>
+                    <input id="txtEmail" placeholder="email" />
+                </li>
+                <li>
+                    <label id="mobileNumber">Cell Phone:</label>
+                    <input id="txtNumber" placeholder="555-555-5555">
+                        </li>
+                <button class="button" id="create">Create</button>
+                <button class="button" id="find">Find</button>
+            </ul>
+        </div>
+        
+        <a class="button" href="../index.html">BACK</a>
+        <!--jQuery-->
+        <script type="text/javascript" src="js/cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        
+        <script type="text/javascript" src="js/contacts.js"></script>
+        
+    </body>
 </html>
